@@ -1,0 +1,26 @@
+{
+  "name": "react-admin-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "mongoose": "^5.10.8",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.4"
+  },
+
+  "eslintConfig": {
+    "extends": "react-app",
+    "rules":{
+      "jsx-a11y/anchor-is-valid":"off"
+    }
+  }
+}
