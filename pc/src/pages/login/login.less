@@ -1,0 +1,79 @@
+.login {
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/bg-login.png");
+  // 头部logo
+  .login-header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: #280869;
+    img {
+      width: 50px;
+      height: 50px;
+      margin-left: 50px;
+      margin-right: 20px;
+    }
+    h1 {
+      font-size: 30px;
+      color: lightcyan;
+      margin-bottom: 0;
+    }
+  }
+  // 登录注册
+  .login-content {
+    padding: 50px;
+    margin: 50px auto;
+    width: 500px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%; //设置圆角
+
+    Button {
+      float: right;
+      font-size: 20px; /* 字体大小 */
+      border: none;
+    }
+    .button-login {
+      width: 100%; /* 宽度 */
+      height: 40px; /* 高度 */
+      border-width: 0px; /* 边框宽度 */
+      border-radius: 3px; /* 边框半径 */
+      background: linear-gradient(to right, #1a0783, #4c0bb4); /* 背景颜色 */
+      cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+      outline: none; /* 不显示轮廓线 */
+      font-family: Microsoft YaHei; /* 设置字体 */
+      color: rgb(232, 223, 245); /* 字体颜色 */
+      font-size: 20px; /* 字体大小 */
+    }
+    .button-login:hover {
+      /* 鼠标移入按钮范围时改变颜色 */
+      background: linear-gradient(to right, #5e0897, #1a0783);
+      color: rgb(232, 223, 245); /* 字体颜色 */
+    }
+    .button-login span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button-login span:after {
+      content: "»";
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button-login:hover span {
+      padding-right: 25px;
+    }
+
+    .button-login:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+  }
+}

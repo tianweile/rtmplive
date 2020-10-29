@@ -1,0 +1,78 @@
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    Image {
+      width: 900px;
+      height: 382px;
+      margin-top: 50px;
+    }
+  }
+// 中间体
+.comment{
+    width: 100%;
+    height: 100%;
+    // 用户名和密码
+    overflow: hidden;
+    .com{
+        margin-top: 30px;
+        height: 60px;
+        Text{
+            width: 10%;
+            float: left;
+            height: 60px;
+            line-height: 60px;
+            margin-left: 8%;
+            text-align: center;
+            font-weight: bold;
+
+        }
+        Input{
+            width: 70%;
+            height: 60px;
+            text-align: left;
+            line-height: 60px;
+            float: left;
+            margin-left: 8%;
+
+        }   
+    } 
+    .hr{
+        border: 3px solid #051ad4;
+        opacity: 0.2;
+        width:90%;
+        margin:0 auto;
+      
+    }  
+
+}
+// 按钮
+.button{
+    width: 100%;
+    overflow: hidden;
+
+    .button-register{
+        margin-top: 20px;
+        width: 70%; /* 宽度 */
+        height: 80px; /* 高度 */
+        border-width: 0px; /* 边框宽度 */
+        border-radius: 6px; /* 边框半径 */
+        background: linear-gradient(to right, #1a0783, #4c0bb4); /* 背景颜色 */
+        outline: none; /* 不显示轮廓线 */
+        font-family: Microsoft YaHei; /* 设置字体 */
+        color: rgb(232, 223, 245); /* 字体颜色 */
+       font-size: 32px; /* 字体大小 */
+        
+    }
+    .button-register:hover{
+         /* 鼠标移入按钮范围时改变颜色 */
+         background: linear-gradient(to right, #5e0897, #1a0783);
+         color: rgb(232, 223, 245); /* 字体颜色 */
+
+    }
+
+}
+
+
